@@ -1,0 +1,146 @@
+$background-color:#EEE
+$container-color:white
+@mixin margin-generator($margin-left,$margin-right)
+   margin-left: $margin-left
+   margin-right: $margin-right
+@mixin border-generator($width,$color,$style)
+   border-width: $width
+   border-color: $color
+   border-style: $style
+
+   
+body
+    background-color: $background-color
+
+    .container
+        display: flex
+        height: auto
+        position: relative
+        margin: auto
+        border-radius: 8px
+        @include margin-generator(10%,10%)
+        background-color: $container-color
+        @media (max-width: 767px)
+            display: inline-block
+            height: 1000px
+            justify-items: center
+            align-items: center 5px
+                
+        .images
+            justify-items: center
+            width: 40%
+            @media (max-width: 767px)
+                width: 100%
+                display: inline-block
+            .bigImage
+                margin: 10px
+                padding: 10%
+                @include border-generator(1px,grey,solid)
+                
+                img
+                   @include margin-generator(auto,auto)
+
+                   width: 100%
+
+
+            .smallImages
+                 justify-items: start
+                 @media (max-width: 767px)
+                     display: none
+               
+                   
+                 ul
+                    display: flex
+                    justify-content: space-between
+                    margin-right: 10%
+                    list-style: none
+                      
+                      
+                 li
+                    border: 1px solid grey
+                        
+                    .foto
+                        width: 100px
+        .productInfo
+            width: 60%
+            margin-top: 5%
+            display: grid
+            justify-items: start
+            @include margin-generator(5%,5%)
+           
+                
+            .baslik-container
+                
+                    
+
+                h1
+                         
+                    font-size: 32px
+                    font-family: Arial, Helvetica, sans-serif
+                
+                span
+                    font-family: sans-serif
+                    color: #878f99
+
+
+            .fiyat-container
+                width: 100%
+                height: auto
+                display: grid
+                background-color: #F4F4F4
+                @include margin-generator(0,5%)
+                @media (max-width: 767px)
+                    margin-top: 10px
+
+                .fiyat
+                    
+                    
+                    font-size: 30px
+                    
+                    font-weight: bold
+
+                .taksit-yazı
+                    font-weight: bold
+                    font-size: 14px
+                    font-family: Roboto,Arial, Helvetica, sans-serif
+                    color: blue
+                    text-decoration: none   
+                .eskiFiyat
+                    color: red
+                    font-size:25px
+                    text-decoration: line-through
+            .aciklama
+             
+                
+                width: auto
+                height: auto
+                background-color:#DCDCDC
+                margin: auto
+                @media (max-width: 767px)
+                    margin-top: 10px
+                .aciklama-header
+                    font-size: 20px
+                    font-weight: bold
+            .buton
+                width: 250px    
+                height: 50px    
+                border-radius:20px
+                color: blue
+                @media (max-width: 767px)
+                    margin-top: 30px
+               
+                &:hover
+                    color: white
+                    background-color: blue
+                
+                     
+       
+
+
+                       
+                
+        
+        
+   
+       
+              

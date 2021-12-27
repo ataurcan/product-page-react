@@ -1,0 +1,141 @@
+@charset "UTF-8";
+body {
+  background-color: #EEE;
+}
+body .container {
+  display: flex;
+  height: auto;
+  position: relative;
+  margin: auto;
+  border-radius: 8px;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: white;
+}
+@media (max-width: 767px) {
+  body .container {
+    display: inline-block;
+    height: 1000px;
+    justify-items: center;
+    align-items: center 5px;
+  }
+}
+body .container .images {
+  justify-items: center;
+  width: 40%;
+}
+@media (max-width: 767px) {
+  body .container .images {
+    width: 100%;
+    display: inline-block;
+  }
+}
+body .container .images .bigImage {
+  margin: 10px;
+  padding: 10%;
+  border-width: 1px;
+  border-color: grey;
+  border-style: solid;
+}
+body .container .images .bigImage img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+body .container .images .smallImages {
+  justify-items: start;
+}
+@media (max-width: 767px) {
+  body .container .images .smallImages {
+    display: none;
+  }
+}
+body .container .images .smallImages ul {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10%;
+  list-style: none;
+}
+body .container .images .smallImages li {
+  border: 1px solid grey;
+}
+body .container .images .smallImages li .foto {
+  width: 100px;
+}
+body .container .productInfo {
+  width: 60%;
+  margin-top: 5%;
+  display: grid;
+  justify-items: start;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+body .container .productInfo .baslik-container h1 {
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .container .productInfo .baslik-container span {
+  font-family: sans-serif;
+  color: #878f99;
+}
+body .container .productInfo .fiyat-container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  background-color: #F4F4F4;
+  margin-left: 0;
+  margin-right: 5%;
+}
+@media (max-width: 767px) {
+  body .container .productInfo .fiyat-container {
+    margin-top: 10px;
+  }
+}
+body .container .productInfo .fiyat-container .fiyat {
+  font-size: 30px;
+  font-weight: bold;
+}
+body .container .productInfo .fiyat-container .taksit-yazı {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: blue;
+  text-decoration: none;
+}
+body .container .productInfo .fiyat-container .eskiFiyat {
+  color: red;
+  font-size: 25px;
+  text-decoration: line-through;
+}
+body .container .productInfo .aciklama {
+  width: auto;
+  height: auto;
+  background-color: #DCDCDC;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  body .container .productInfo .aciklama {
+    margin-top: 10px;
+  }
+}
+body .container .productInfo .aciklama .aciklama-header {
+  font-size: 20px;
+  font-weight: bold;
+}
+body .container .productInfo .buton {
+  width: 250px;
+  height: 50px;
+  border-radius: 20px;
+  color: blue;
+}
+@media (max-width: 767px) {
+  body .container .productInfo .buton {
+    margin-top: 30px;
+  }
+}
+body .container .productInfo .buton:hover {
+  color: white;
+  background-color: blue;
+}
+
+/*# sourceMappingURL=App.css.map */
