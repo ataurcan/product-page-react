@@ -1,14 +1,20 @@
 
 import React from "react";
-import { product } from "../Product";
-export default function Fiyat({newPrice},{oldPrice}) {
+import Taksit from "./Taksit";
+export default function Fiyat({price}) {
+
+   
     return (
         <div className="fiyat-container">
-        <span className="fiyat">Fiyat: <span>{product.newPrice}</span> <span class="eskiFiyat">{product.oldPrice}</span> </span>
-        <span className="taksit">3 taksit X 596,67 TL <a class="taksit-yazı" href="#">Öne Çıkan Taksitler</a>
-        </span>
+            {price.oldPrice !== price.newPrice && price.oldPrice >price.newPrice ? (
+                 <span className="fiyat">Fiyat: <span>{price.newPrice}</span> <span class="eskiFiyat">{price.oldPrice}</span> </span>
+            ):(
+                <span className="fiyat">Fiyat: <span>{price.newPrice}</span>  </span> 
+            )}
+       
+           <Taksit marketPrice={price}/>
     </div>
-  
+        
     );
   }
   

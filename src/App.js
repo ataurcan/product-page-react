@@ -4,9 +4,7 @@ import  Container from "./components/Container"
 import {product} from "./Product";
 function App() {
   return (
-    <Container product={product} >
-    </Container>
-
+    <Container product={product} />
   );
 }
 

@@ -1,10 +1,10 @@
 
 import React from "react";
-import { product } from "../Product";
 
-function Aciklama() {
+
+function Aciklama({description}) {
     return (
-        <p className="aciklama"> <span className="aciklama-header">AÇIKLAMA :</span> {product.description}  </p>
+        <p className="aciklama"> <span className="aciklama-header">AÇIKLAMA :</span> {description}  </p>
 
   
     );

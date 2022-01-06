@@ -1,26 +1,15 @@
 import react from "react";
 import Images from "./Images";
 import ProductInfo from "./ProductInfo";
-function Container() {
-return(
-
-<div className="container">
-   <Images></Images>
-   <ProductInfo></ProductInfo>
-
-</div>
-
-
-
-
-);
-
-
-
-
-
-
-
+function Container({product}) {
+   console.log(product.info);
+   
+   return(
+      <div className="container">
+         <Images images={product.images}/>
+         <ProductInfo infos={product.info}/>
+      </div>
+   );
 }
 
 

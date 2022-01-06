@@ -1,10 +1,10 @@
 import React from "react";
-import {product} from "../Product";
 
-export default function BigImage({images}) {
+
+export default function BigImage({bigImage}) {
     return (
         <div className="bigImage">
-        <img src={product.images[0]}
+        <img src={bigImage}
             alt="fotoğraf makinesi"/>
 
     </div>

@@ -1,11 +1,12 @@
 import BigImage from "./BigImage";
 import SmallImages from "./SmallImages";
-function Images() {
+function Images({images}) {
+  
     return (
         <div className="images">
-           <BigImage></BigImage>
-           <SmallImages></SmallImages>
-    </div>
+           <BigImage bigImage={images.bigImage}/>
+           <SmallImages thumbnail={images.thumbnails}/>
+        </div>
   
     );
   }

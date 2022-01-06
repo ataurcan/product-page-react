@@ -1,14 +1,14 @@
 import React from "react";
 import {product} from "../Product";
-function SmallImages({images}) {
+function SmallImages({thumbnail}) {
     return (
         <div className="smallImages">
         <ul >
-            <li><img class="foto" src={product.images[1]}
+            <li><img className="foto" src={thumbnail[0]}
                     alt="fotoğraf makinesi"/></li>
-            <li><img class="foto" src={product.images[2]}
+            <li><img className="foto" src={thumbnail[1]}
                     alt="fotoğraf makinesi"/></li>
-            <li><img class="foto" src={product.images[3]}
+            <li><img className="foto" src={thumbnail[2]}
                     alt="fotoğraf makinesi"/></li>
         </ul>
     </div>

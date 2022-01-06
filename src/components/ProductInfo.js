@@ -2,13 +2,14 @@ import Baslik from "./Baslik";
 import Fiyat from "./Fiyat";
 import Aciklama from "./Aciklama";
 import Button from "./Button";
-function ProductInfo() {
+function ProductInfo({infos}) {
+  console.log(infos.header);
     return (
         <div className="productInfo">
-          <Baslik></Baslik>
-          <Fiyat></Fiyat>
-          <Aciklama></Aciklama>
-          <Button></Button>
+          <Baslik header={infos.title}/>
+          <Fiyat  price={infos.price}/>
+          <Aciklama description={infos.description}/>
+          <Button/>
         
     </div>
   
