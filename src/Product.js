@@ -1,28 +1,28 @@
 import React from "react";
-  export const product={
-    images:{
-      bigImage:"kamera1.jpeg",
-      thumbnails:["kamera2.jpeg","kamera3.jpeg","kamera4.jpeg"]
-    },
+  export const product={ 
    
+      images:[
+        {
+          thumbnail:"kamera2.jpeg",bigImage:"kamera2Big.jpeg"
+        },
+        {
+          thumbnail:"kamera3.jpeg",bigImage:"kamera3Big.jpeg"
+        },
+        {
+          thumbnail:"kamera4.jpeg",bigImage:"kamera4Big.jpeg"
+        }
+
+      ],
     info:{
       title: {
         header: "Kodak PIXPRO FZ43 Dijital Makine, Kompakt",
         name:"Kodak Pixpro FZ43 Siyah 16MP 4X Optik Zoom Dijital Fotoğraf Makinesi",
       },
       price: {
-        newPrice: "1.790.00",
-        oldPrice: "2.100.00",
+        newPrice: 1790,
+        oldPrice: 2100,
       },
       description: "Çekim Modları M, Otomatik, Portre, Film, Panorama, Sahne (ASCN, Manzara, Spor, Plaj,Günbatımı, Havai Fişekler, Gece Manzarası, Kar, Çocuklar, Kimlik, Cam, Fotoğraf Çerçevesi, Panning Shot,Metin, Portre, Balık Gözü, Kapalı, Yaprak, Müze, Gece Portresi, Eskiz, Görüntü Sabitleme)",
 
     }
-}
-export const product2={
-  header: "Kodak PIXPRO FZ43 Dijital Makine, Kompakt",
-  name:"Kodak Pixpro FZ43 Siyah 16MP 4X Optik Zoom Dijital Fotoğraf Makinesi",
-  newPrice: "1.790.00",
-  oldPrice: "1.790.00",
-  description: "Çekim Modları M, Otomatik, Portre, Film, Panorama, Sahne (ASCN, Manzara, Spor, Plaj,Günbatımı, Havai Fişekler, Gece Manzarası, Kar, Çocuklar, Kimlik, Cam, Fotoğraf Çerçevesi, Panning Shot,Metin, Portre, Balık Gözü, Kapalı, Yaprak, Müze, Gece Portresi, Eskiz, Görüntü Sabitleme)",
-  images:["kamera1.jpeg","kamera2.jpeg","kamera3.jpeg","kamera4.jpeg"]
 }
