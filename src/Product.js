@@ -19,7 +19,7 @@ import React from "react";
         name:"Kodak Pixpro FZ43 Siyah 16MP 4X Optik Zoom Dijital Fotoğraf Makinesi",
       },
       price: {
-        newPrice: 1790,
+        newPrice: 1500,
         oldPrice: 2100,
       },
       description: "Çekim Modları M, Otomatik, Portre, Film, Panorama, Sahne (ASCN, Manzara, Spor, Plaj,Günbatımı, Havai Fişekler, Gece Manzarası, Kar, Çocuklar, Kimlik, Cam, Fotoğraf Çerçevesi, Panning Shot,Metin, Portre, Balık Gözü, Kapalı, Yaprak, Müze, Gece Portresi, Eskiz, Görüntü Sabitleme)",
