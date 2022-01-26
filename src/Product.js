@@ -20,7 +20,7 @@ import React from "react";
       },
       price: {
         newPrice: 1500,
-        oldPrice: 2100,
+        oldPrice: 1100,
       },
       description: "Çekim Modları M, Otomatik, Portre, Film, Panorama, Sahne (ASCN, Manzara, Spor, Plaj,Günbatımı, Havai Fişekler, Gece Manzarası, Kar, Çocuklar, Kimlik, Cam, Fotoğraf Çerçevesi, Panning Shot,Metin, Portre, Balık Gözü, Kapalı, Yaprak, Müze, Gece Portresi, Eskiz, Görüntü Sabitleme)",
 
