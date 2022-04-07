@@ -10,21 +10,10 @@ function Images({images}) {
     return (
         <div className="images">
             <div className="bigImage">
-            <img src={`./${images[activeImageIndex].bigImage}`}  />
-
+                <img src={images.productImage}  />
             </div>
-            <div className="smallImages">
-            <ul>
-            {images.map((image, index) => {
-                
-                return    <li onClick={(e) => handleClick(e, index)}><img src={`./${image.thumbnail}`} className="foto" alt="fotoğraf makinesi" /></li>    ;  
-                   
-            })}
-                </ul>
-
-            </div>
-        </div>
-        
+           
+        </div> 
     );
   }
   

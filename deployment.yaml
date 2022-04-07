@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: product-page-service
+spec:
+  type: NodePort
+  selector:
+    app: product-page-app
+  ports:
+    - protocol: "TCP"
+      port: 6000
+      targetPort: 3000
+      nodePort: 30001
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-page-app
+  labels:
+    app: pdp-react-app
+spec:
+  selector:
+    matchLabels:
+      app: product-page-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: product-page-app
+    spec:
+      containers:
+        - name: product-page-app
+          image: ataurcan/gg-product-page-container:latest
+          ports:
+            - containerPort: 3000

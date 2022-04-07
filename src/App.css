@@ -70,6 +70,13 @@ body .container .productInfo {
   margin-left: 5%;
   margin-right: 5%;
 }
+
+body .container .productInfo * {
+  margin-top: 20px;
+}
+
+
+
 body .container .productInfo .baslik-container h1 {
   font-size: 32px;
   font-family: Arial, Helvetica, sans-serif;
@@ -108,10 +115,13 @@ body .container .productInfo .fiyat-container .eskiFiyat {
   text-decoration: line-through;
 }
 body .container .productInfo .aciklama {
+  
   width: auto;
   height: auto;
   background-color: #DCDCDC;
   margin: auto;
+  margin-left: 0px;
+  margin-top: 50px;
 }
 @media (max-width: 767px) {
   body .container .productInfo .aciklama {
